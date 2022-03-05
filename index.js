@@ -1,19 +1,32 @@
-import express from 'express';
-import {tokenize} from 'express-basistheory-tokenize';
+import dotenv from "dotenv";
+import express from "express";
+import { tokenize, detokenize } from "express-basistheory-tokenize";
 
+dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(tokenize({
-    apiKey: "key_4qUtg83MpoVnDemfJwbzcN", 
+
+// configure which dangerous values to tokenize before calling request code
+app.use(
+  tokenize({
     tokenize: {
-        "/": ["the_number", "dope", "killer"]
-    }
-}));
+      "/": ["the_number", "dope", "rad"],
+    },
+  })
+);
 
-app.post('/', function (req, res) {
-    console.log(req.body)
-    res.send(req.body)
-})
+// configure which properties to turn back into the raw values
+app.use(
+  detokenize({
+    detokenize: {
+      "/": ["the_number", "rad"],
+    },
+  })
+);
 
-app.listen(3111)
+app.post("/", function (req, res) {
+  res.send(req.body);
+});
+
+app.listen(3111);

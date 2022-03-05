@@ -129,6 +129,11 @@ dot-case@^3.0.4:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
+dotenv@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.0.tgz#c619001253be89ebb638d027b609c75c26e47411"
+  integrity sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -149,10 +154,10 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-express-basistheory-tokenize@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/express-basistheory-tokenize/-/express-basistheory-tokenize-1.0.1.tgz#7614e5111d2159cfa867ae047e5f28d07b1881bb"
-  integrity sha512-MojKTwy7OS4aVbFYRaht965BIzYmus0AWi8JOk0RVF1p0e1PkUgDsHczZ2jVmsGAGDzEgeMf78Ml1mAwgrvsJQ==
+express-basistheory-tokenize@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/express-basistheory-tokenize/-/express-basistheory-tokenize-1.0.3.tgz#de24b66ed0168162108a4162800763578831ebd0"
+  integrity sha512-lMGMw+wjvqDS64B5o52w2jrkmjzD1udnvb4ZPbRhkUvLSaIB8tQfUpdQ03rc7RAiATcJWJACkvjfwX22KccwzQ==
   dependencies:
     "@basis-theory/basis-theory-js" "^1.22.2"
 
@@ -341,6 +346,11 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+
+prettier@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 proxy-addr@~2.0.7:
   version "2.0.7"
